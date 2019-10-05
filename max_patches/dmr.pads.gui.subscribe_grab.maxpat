@@ -39,6 +39,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 344.666676044464111, 210.0, 83.0, 22.0 ],
+					"text" : "r ---resize_gui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 344.666676044464111, 236.0, 107.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "dmr.util.get_size",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js dmr.util.get_size"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"border" : 2,
@@ -60,7 +89,7 @@
 				"box" : 				{
 					"comment" : "Updates from network",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -144,11 +173,11 @@
 					"presentation_rect" : [ -0.1678466796875, -0.166656881570816, 68.499993175268173, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text[7]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[3]",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "live.text[7]"
 						}
 
 					}
@@ -207,6 +236,20 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-360", 1 ],
 					"source" : [ "obj-353", 0 ]
@@ -279,52 +322,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-359" : [ "live.text[7]", "live.text[3]", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "dmr.grab.network.maxpat",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network",
-				"patcherrelativepath" : "../../grab.network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmr.grab.menu.maxpat",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network",
-				"patcherrelativepath" : "../../grab.network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmr.grab.fill_window.maxpat",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network/ui",
-				"patcherrelativepath" : "../../grab.network/ui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "get_size.js",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network/ui",
-				"patcherrelativepath" : "../../grab.network/ui",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmr.grab.buffer_subscribe.maxpat",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network",
-				"patcherrelativepath" : "../../grab.network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

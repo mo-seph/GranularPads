@@ -39,6 +39,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 806.666676044464111, 296.0, 83.0, 22.0 ],
+					"text" : "r ---resize_gui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 806.666676044464111, 322.0, 107.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "dmr.util.get_size",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js dmr.util.get_size"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"border" : 2,
@@ -48,7 +77,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 344.666676044464111, 277.333340704441071, 128.0, 128.0 ],
+					"patching_rect" : [ 806.666676044464111, 370.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.1678466796875, 0.027194976806641, 69.5, 51.166666030883789 ],
 					"proportion" : 0.5,
@@ -167,7 +196,7 @@
 				"box" : 				{
 					"comment" : "Current Voice",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -180,7 +209,7 @@
 				"box" : 				{
 					"comment" : "Grab Command",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -193,7 +222,7 @@
 				"box" : 				{
 					"comment" : "Updates from the network",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -218,12 +247,12 @@
 					"presentation_rect" : [ -0.1678466796875, 0.027194976806641, 29.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text[3]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[3]",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "live.text[3]"
 						}
 
 					}
@@ -406,16 +435,16 @@
 					"presentation_rect" : [ 27.3321533203125, 0.027194976806641, 42.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : 100.0,
-							"parameter_exponent" : 2.5,
-							"parameter_longname" : "GrabLength",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 30000.0,
 							"parameter_initial" : [ 2000.0 ],
 							"parameter_shortname" : "GrabLength",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
-							"parameter_linknames" : 1
+							"parameter_linknames" : 1,
+							"parameter_mmin" : 100.0,
+							"parameter_exponent" : 2.5,
+							"parameter_longname" : "GrabLength"
 						}
 
 					}
@@ -515,11 +544,11 @@
 					"patching_rect" : [ 156.381103515625, 35.0, 33.0, 30.63330078125 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.button[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.button[1]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "live.button[1]"
 						}
 
 					}
@@ -541,11 +570,11 @@
 					"presentation_rect" : [ -0.1678466796875, 37.19386100769043, 15.0, 13.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.toggle[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle[1]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "live.toggle[1]"
 						}
 
 					}
@@ -570,11 +599,11 @@
 					"presentation_rect" : [ 9.3321533203125, 37.19386100769043, 59.0, 13.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.numbox[1]",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 1
+							"parameter_unitstyle" : 1,
+							"parameter_longname" : "live.numbox[1]"
 						}
 
 					}
@@ -978,8 +1007,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -1018,49 +1061,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-217" : [ "live.button[1]", "live.button[1]", 0 ],
-			"obj-337" : [ "live.text[3]", "live.text[3]", 0 ],
-			"obj-86" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
-			"obj-47" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
-			"obj-249" : [ "GrabLength", "GrabLength", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "dmr.grab.network.maxpat",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network",
-				"patcherrelativepath" : "../../grab.network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmr.grab.menu.maxpat",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network",
-				"patcherrelativepath" : "../../grab.network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmr.grab.fill_window.maxpat",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network/ui",
-				"patcherrelativepath" : "../../grab.network/ui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "get_size.js",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/grab.network/ui",
-				"patcherrelativepath" : "../../grab.network/ui",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

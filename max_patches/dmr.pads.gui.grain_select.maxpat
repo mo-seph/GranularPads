@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1297.0, 937.0 ],
+		"rect" : [ 849.0, -1001.0, 892.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,9 +39,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 685.466564941406205, 84.0, 83.0, 22.0 ],
+					"text" : "r ---resize_gui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 685.466564941406205, 111.0, 119.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "dmr.util.get_size.js",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js dmr.util.get_size.js"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "Dictionaries Through",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -54,7 +83,7 @@
 				"box" : 				{
 					"comment" : "Control Through",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -67,7 +96,7 @@
 				"box" : 				{
 					"comment" : "Data Through",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -81,7 +110,7 @@
 				"box" : 				{
 					"comment" : "Control In",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -95,7 +124,7 @@
 				"box" : 				{
 					"comment" : "Data Out",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -108,7 +137,7 @@
 				"box" : 				{
 					"comment" : "Dictionaries In",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -130,18 +159,18 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 681.482177734375, 287.0, 72.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 64.516795000000002, -0.596054, 15.0, 15.0 ],
+					"presentation_rect" : [ -1.483204999999998, -0.596054, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "tri", "blackman", "expmod", "gauss", "hanning", "trapez10", "trapez20", "trapez30", "expdec" ],
-							"parameter_type" : 2,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "#0_window_function",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 8,
 							"parameter_initial" : [ 3.0 ],
 							"parameter_order" : 5,
-							"parameter_shortname" : "Window"
+							"parameter_shortname" : "Window",
+							"parameter_enum" : [ "tri", "blackman", "expmod", "gauss", "hanning", "trapez10", "trapez20", "trapez30", "expdec" ],
+							"parameter_type" : 2,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "2369_window_function"
 						}
 
 					}
@@ -257,6 +286,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-124", 0 ]
 				}
@@ -307,17 +343,14 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-137" : [ "#0_window_function", "Window", 5 ],
-			"parameterbanks" : 			{
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
 
 			}
-
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

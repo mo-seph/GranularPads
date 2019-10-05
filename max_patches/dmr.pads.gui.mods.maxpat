@@ -39,9 +39,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 344.666676044464111, 210.0, 83.0, 22.0 ],
+					"text" : "r ---resize_gui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 344.666676044464111, 236.0, 107.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "dmr.util.get_size",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js dmr.util.get_size"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "Control Out",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -76,12 +105,12 @@
 					"presentation_rect" : [ 8.736195117235184, 50.25, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "Mod4",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod4",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "Mod4"
+							"parameter_longname" : "Mod4[1]"
 						}
 
 					}
@@ -105,12 +134,12 @@
 					"presentation_rect" : [ 8.736195117235184, 37.153945922851562, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "Mod3",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod3",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "Mod3"
+							"parameter_longname" : "Mod3[1]"
 						}
 
 					}
@@ -134,12 +163,12 @@
 					"presentation_rect" : [ 8.736195117235184, 23.824996948242188, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "Mod2",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod2",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "Mod2"
+							"parameter_longname" : "Mod2[1]"
 						}
 
 					}
@@ -163,12 +192,12 @@
 					"presentation_rect" : [ 8.736195117235184, 10.57501220703125, 49.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "Mod1",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod1",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "Mod1"
+							"parameter_longname" : "Mod1[1]"
 						}
 
 					}
@@ -305,8 +334,7 @@
 					"patching_rect" : [ 0.0, 0.0, 32.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.016402661800385, -3.175003051757812, 33.333332866430283, 18.0 ],
-					"text" : "Mods",
-					"textjustification" : 0
+					"text" : "Mods"
 				}
 
 			}
@@ -356,6 +384,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-306", 0 ],
 					"midpoints" : [ 76.5, 150.99993896484375, 53.5, 150.99993896484375 ],
 					"source" : [ "obj-200", 0 ]
@@ -392,25 +427,19 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-306", 0 ]
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-201" : [ "Mod1", "Mod1", 0 ],
-			"obj-204" : [ "Mod4", "Mod4", 0 ],
-			"obj-202" : [ "Mod2", "Mod2", 0 ],
-			"obj-203" : [ "Mod3", "Mod3", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
