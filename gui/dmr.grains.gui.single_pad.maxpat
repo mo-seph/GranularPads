@@ -39,6 +39,47 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 198.0, 173.0, 31.0, 22.0 ],
+					"text" : "float"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 109.466564941406205, 376.5, 83.0, 22.0 ],
+					"text" : "r ---resize_gui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 109.466564941406205, 403.5, 107.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "dmr.util.get_size",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js dmr.util.get_size"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -141,7 +182,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 160.0, 50.400001525878906, 27.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.25, 24.0, 23.5, 19.0 ],
+					"presentation_rect" : [ -0.75, -2.0, 23.5, 19.0 ],
 					"text" : "#1",
 					"textcolor" : [ 1.0, 0.709803938865662, 0.196078434586525, 1.0 ]
 				}
@@ -150,7 +191,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.152941176470588, 0.152941176470588, 0.152941176470588, 0.13 ],
-					"color" : [ 0.0, 0.3, 1.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 1.0, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "pictslider",
 					"numinlets" : 2,
@@ -159,8 +200,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 380.033348083496094, 503.0, 94.0, 85.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 40.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 27.0, 20.0 ],
 					"rightvalue" : 100,
+					"scaleknob" : 1,
 					"topvalue" : 100
 				}
 
@@ -290,16 +332,16 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ],
-					"border" : 4,
+					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"id" : "obj-20",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 59.0, 285.0, 128.0, 128.0 ],
+					"patching_rect" : [ 59.0, 489.5, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 40.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 27.0, 20.0 ],
 					"proportion" : 0.5
 				}
 
@@ -363,14 +405,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 208.400001525878906, 273.500004976987839, 247.100002467632294, 273.500004976987839 ],
-					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-2", 3 ]
 				}
@@ -380,6 +414,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -443,7 +484,38 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 207.5, 273.500004976987839, 247.100002467632294, 273.500004976987839 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"order" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 0,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -456,6 +528,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "dmr.util.get_size.js",
+				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/dmr.util/ui",
+				"patcherrelativepath" : "../../dmr.util/ui",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "list-interpolate.mxo",
 				"type" : "iLaX"
 			}

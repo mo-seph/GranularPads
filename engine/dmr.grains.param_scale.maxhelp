@@ -266,7 +266,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 433.0, 343.0, 211.0, 22.0 ],
-					"text" : "dmr.pads.param_scale 200. 20000. 3."
+					"text" : "dmr.grains.param_scale 200. 20000. 3."
 				}
 
 			}
@@ -489,7 +489,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "dmr.pads.param_scale.maxpat",
+				"name" : "dmr.grains.param_scale.maxpat",
 				"bootpath" : "~/PersonalProjects/MusicDevices/GranularPads/max_patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

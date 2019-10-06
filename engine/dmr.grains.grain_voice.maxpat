@@ -1058,7 +1058,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 699.0, 251.0, 22.0 ],
-					"text" : "dmr.pads.param_extract grain_rate_noise 0.5"
+					"text" : "dmr.grains.param_extract grain_rate_noise 0.5"
 				}
 
 			}
@@ -1170,7 +1170,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 968.70001220703125, 210.0, 22.0 ],
-					"text" : "dmr.pads.param_extract pan_noise 1."
+					"text" : "dmr.grains.param_extract pan_noise 1."
 				}
 
 			}
@@ -1182,7 +1182,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 811.39996337890625, 243.0, 22.0 ],
-					"text" : "dmr.pads.param_extract loop_start_noise 1."
+					"text" : "dmr.grains.param_extract loop_start_noise 1."
 				}
 
 			}
@@ -1256,7 +1256,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 616.5999755859375, 215.0, 22.0 ],
-					"text" : "dmr.pads.param_extract pitch_noise 1."
+					"text" : "dmr.grains.param_extract pitch_noise 1."
 				}
 
 			}
@@ -1292,7 +1292,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 927.70001220703125, 175.0, 22.0 ],
-					"text" : "dmr.pads.param_extract pan 1."
+					"text" : "dmr.grains.param_extract pan 1."
 				}
 
 			}
@@ -1641,7 +1641,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 897.70001220703125, 236.0, 22.0 ],
-					"text" : "dmr.pads.param_extract sweep_amount 1."
+					"text" : "dmr.grains.param_extract sweep_amount 1."
 				}
 
 			}
@@ -1653,7 +1653,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 862.0, 217.0, 22.0 ],
-					"text" : "dmr.pads.param_extract sweep_rate 1."
+					"text" : "dmr.grains.param_extract sweep_rate 1."
 				}
 
 			}
@@ -1665,7 +1665,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 770.39996337890625, 207.0, 22.0 ],
-					"text" : "dmr.pads.param_extract loop_start 1."
+					"text" : "dmr.grains.param_extract loop_start 1."
 				}
 
 			}
@@ -1677,7 +1677,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 734.70001220703125, 196.0, 22.0 ],
-					"text" : "dmr.pads.param_extract fill_ratio 2."
+					"text" : "dmr.grains.param_extract fill_ratio 2."
 				}
 
 			}
@@ -1689,7 +1689,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 668.0, 209.0, 22.0 ],
-					"text" : "dmr.pads.param_extract grain_rate 3."
+					"text" : "dmr.grains.param_extract grain_rate 3."
 				}
 
 			}
@@ -1701,7 +1701,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 577.5999755859375, 180.0, 22.0 ],
-					"text" : "dmr.pads.param_extract pitch 1."
+					"text" : "dmr.grains.param_extract pitch 1."
 				}
 
 			}
@@ -1713,7 +1713,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 541.89996337890625, 214.0, 22.0 ],
-					"text" : "dmr.pads.param_extract filter_mode 1."
+					"text" : "dmr.grains.param_extract filter_mode 1."
 				}
 
 			}
@@ -1725,7 +1725,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 506.199981689453125, 180.0, 22.0 ],
-					"text" : "dmr.pads.param_extract filt_q 2."
+					"text" : "dmr.grains.param_extract filt_q 2."
 				}
 
 			}
@@ -4513,7 +4513,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 470.499969482421875, 177.0, 22.0 ],
-					"text" : "dmr.pads.param_extract filt_f 4."
+					"text" : "dmr.grains.param_extract filt_f 4."
 				}
 
 			}
@@ -4525,7 +4525,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 130.2412109375, 434.79998779296875, 193.0, 22.0 ],
-					"text" : "dmr.pads.param_extract volume 1."
+					"text" : "dmr.grains.param_extract volume 1."
 				}
 
 			}

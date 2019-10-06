@@ -5925,7 +5925,7 @@
 					"numoutlets" : 7,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "", "", "" ],
 					"patching_rect" : [ 490.235801696777344, 631.0, 390.0, 26.0 ],
-					"text" : "poly~ dmr.pads.grain_voice #1"
+					"text" : "poly~ dmr.grains.grain_voice #1"
 				}
 
 			}

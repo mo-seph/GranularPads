@@ -105,7 +105,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 317.0, 591.0, 414.0, 22.0 ],
-					"text" : "dmr.pads.param_scale 0. 1. #2"
+					"text" : "dmr.grains.param_scale 0. 1. #2"
 				}
 
 			}
