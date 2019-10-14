@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -111.0, -1001.0, 1537.0, 967.0 ],
+		"rect" : [ 34.0, 79.0, 1297.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "Pad Number to look at",
+					"id" : "obj-12",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 246.0, 28.399999618530273, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
@@ -183,7 +196,7 @@
 					"patching_rect" : [ 160.0, 50.400001525878906, 27.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.75, -2.0, 23.5, 19.0 ],
-					"text" : "#1",
+					"text" : "0",
 					"textcolor" : [ 1.0, 0.709803938865662, 0.196078434586525, 1.0 ]
 				}
 
@@ -214,7 +227,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.20001220703125, 28.399999618530273, 77.0, 22.0 ],
+					"patching_rect" : [ 152.0, 12.399999618530273, 77.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -226,7 +239,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 94.0, 76.0, 53.0, 22.0 ],
+					"patching_rect" : [ 94.0, 76.0, 170.0, 22.0 ],
 					"text" : "route #1"
 				}
 
@@ -305,9 +318,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Messages in, prepended with the pad number (output from midi control etc...)",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -365,6 +378,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"order" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 1 ],
+					"order" : 1,
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -526,20 +555,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "dmr.util.get_size.js",
-				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/dmr.util/ui",
-				"patcherrelativepath" : "../../dmr.util/ui",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "list-interpolate.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
