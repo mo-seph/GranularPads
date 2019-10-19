@@ -70,7 +70,7 @@
 				"box" : 				{
 					"comment" : "Control Out",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -102,15 +102,15 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 21.0, 94.333251953125, 48.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.736195117235184, 50.25, 49.0, 15.0 ],
+					"presentation_rect" : [ 8.736195117235184, 53.25, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Mod4",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod4[1]"
+							"parameter_longname" : "Mod4",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -131,15 +131,15 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 21.0, 70.333251953125, 48.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.736195117235184, 37.153945922851562, 49.0, 15.0 ],
+					"presentation_rect" : [ 8.736195117235184, 40.153945922851562, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Mod3",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod3[1]"
+							"parameter_longname" : "Mod3",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -160,15 +160,15 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 21.0, 46.333251953125, 48.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.736195117235184, 23.824996948242188, 49.0, 15.0 ],
+					"presentation_rect" : [ 8.736195117235184, 26.824996948242188, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Mod2",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod2[1]"
+							"parameter_longname" : "Mod2",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -189,15 +189,15 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 21.0, 22.5, 48.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.736195117235184, 10.57501220703125, 49.0, 15.0 ],
+					"presentation_rect" : [ 8.736195117235184, 13.57501220703125, 35.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Mod1",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Mod1[1]"
+							"parameter_longname" : "Mod1",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -265,7 +265,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 91.833251953125, 19.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -4.263804882764816, 48.25, 17.0, 18.0 ],
+					"presentation_rect" : [ -4.263804882764816, 51.25, 17.0, 18.0 ],
 					"text" : "4",
 					"textjustification" : 2
 				}
@@ -282,7 +282,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 67.833251953125, 19.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -4.263804882764816, 35.153945922851562, 17.0, 18.0 ],
+					"presentation_rect" : [ -4.263804882764816, 38.153945922851562, 17.0, 18.0 ],
 					"text" : "3",
 					"textjustification" : 2
 				}
@@ -299,7 +299,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 43.833251953125, 19.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -4.263804882764816, 21.824996948242188, 17.0, 18.0 ],
+					"presentation_rect" : [ -4.263804882764816, 24.824996948242188, 17.0, 18.0 ],
 					"text" : "2",
 					"textjustification" : 2
 				}
@@ -316,7 +316,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 20.0, 19.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -4.263804882764816, 8.57501220703125, 17.0, 18.0 ],
+					"presentation_rect" : [ -4.263804882764816, 11.57501220703125, 17.0, 18.0 ],
 					"text" : "1",
 					"textjustification" : 2
 				}
@@ -439,7 +439,27 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-204" : [ "Mod4", "Mod4", 0 ],
+			"obj-201" : [ "Mod1", "Mod1", 0 ],
+			"obj-203" : [ "Mod3", "Mod3", 0 ],
+			"obj-202" : [ "Mod2", "Mod2", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "dmr.util.get_size.js",
+				"bootpath" : "~/PersonalProjects/Ableton Library/Ready/MusicDevices/dmr.util/ui",
+				"patcherrelativepath" : "../../dmr.util/ui",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
