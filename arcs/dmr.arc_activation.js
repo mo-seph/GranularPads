@@ -38,7 +38,7 @@ function update() {
 
 function trigger(id) {
 	energy = activations[id] || 1.0;
-	post("Activating! " + id + ": " + energy + "\n");
+	//post("Activating! " + id + ": " + energy + "\n");
 	hold_offs[id] = base_hold_off;
 	d = new Dict()
 	d.set("time",Math.random() * energy * max_length + min_length)
