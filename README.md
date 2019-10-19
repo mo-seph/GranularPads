@@ -1,4 +1,6 @@
-# GranularPads
+# GranularSynth
+
+This is a granular synth engine, based on the [rgr.grains](https://github.com/mo-seph/rgr.bufgrains) package
 
 
 ## Messages
