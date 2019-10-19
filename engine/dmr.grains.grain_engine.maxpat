@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1297.0, 937.0 ],
+		"rect" : [ -111.0, -1001.0, 1492.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,66 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 439.192852020263672, 789.2333984375, 132.085899353027344, 47.0 ],
+					"text" : "Added so that it loads the values from Pad1 after initialisation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 586.0, 836.5, 48.0, 22.0 ],
+					"text" : "del 300"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 586.0, 862.0, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 586.0, 805.2333984375, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 586.0, 780.297119437499987, 145.0, 22.0 ],
+					"text" : "r ---initialisation_complete"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "Live data about all voices",
 					"id" : "obj-5",
@@ -2186,7 +2246,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 698.650070190429688, 902.0, 132.085899353027344, 47.0 ],
+					"patching_rect" : [ 697.316569010416742, 902.0, 132.085899353027344, 47.0 ],
 					"text" : "Send out dictionary for the current voice whenever it is changed"
 				}
 
@@ -3193,7 +3253,7 @@
 										"valueof" : 										{
 											"parameter_invisible" : 2,
 											"parameter_linknames" : 1,
-											"parameter_longname" : "all_parameters[1]",
+											"parameter_longname" : "all_parameters[5]",
 											"parameter_shortname" : "all_parameters",
 											"parameter_type" : 3
 										}
@@ -3434,7 +3494,6 @@
 					"data" : 					{
 						"1" : 						{
 							"poly_id" : 1,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
@@ -3443,23 +3502,23 @@
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
 								}
 ,
 								"filt_f" : 								{
-									"low" : 23.88817356602588,
+									"low" : 20000.0,
 									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.986329040513154,
-									"high" : 0.986329040513154,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -3471,31 +3530,31 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
 									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
-									"source" : "x",
-									"high" : 1.0,
-									"low" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
-									"high" : 2.0,
-									"low" : 2.0
+									"high" : 1.0,
+									"low" : 1.0
 								}
 ,
 								"pitch" : 								{
@@ -3506,23 +3565,23 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
@@ -3534,8 +3593,8 @@
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -3543,29 +3602,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 01.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u185005869",
-							"buffer_length" : 10000.0,
-							"gain" : -6.0,
-							"envbuffer_name" : "---default_envbuf.1",
-							"buffer_name" : "---default_buf.1"
+							"gain" : 0.0,
+							"dictionary" : "u635018788"
 						}
 ,
 						"2" : 						{
 							"poly_id" : 2,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -3573,15 +3627,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -3593,28 +3647,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -3628,36 +3682,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -3665,28 +3719,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 02.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u259005886",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.2",
-							"buffer_name" : "---default_buf.2"
+							"gain" : 0.0,
+							"dictionary" : "u109018804"
 						}
 ,
 						"3" : 						{
 							"poly_id" : 3,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -3694,15 +3744,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -3714,28 +3764,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -3749,36 +3799,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -3786,28 +3836,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 03.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u770005903",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.3",
-							"buffer_name" : "---default_buf.3"
+							"gain" : 0.0,
+							"dictionary" : "u783012017"
 						}
 ,
 						"4" : 						{
 							"poly_id" : 4,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -3815,15 +3861,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -3835,28 +3881,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -3870,36 +3916,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -3907,28 +3953,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 04.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u185005920",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.4",
-							"buffer_name" : "---default_buf.4"
+							"gain" : 0.0,
+							"dictionary" : "u400012000"
 						}
 ,
 						"5" : 						{
 							"poly_id" : 5,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -3936,15 +3978,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -3956,28 +3998,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -3991,36 +4033,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4028,28 +4070,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 05.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u482005937",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.5",
-							"buffer_name" : "---default_buf.5"
+							"gain" : 0.0,
+							"dictionary" : "u007011982"
 						}
 ,
 						"6" : 						{
 							"poly_id" : 6,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4057,15 +4095,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4077,28 +4115,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4112,36 +4150,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4149,28 +4187,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 06.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u604005954",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.6",
-							"buffer_name" : "---default_buf.6"
+							"gain" : 0.0,
+							"dictionary" : "u095011963"
 						}
 ,
 						"7" : 						{
 							"poly_id" : 7,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4178,15 +4212,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4198,28 +4232,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4233,36 +4267,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4270,28 +4304,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 07.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u248005971",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.7",
-							"buffer_name" : "---default_buf.7"
+							"gain" : 0.0,
+							"dictionary" : "u240011943"
 						}
 ,
 						"8" : 						{
 							"poly_id" : 8,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4299,15 +4329,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4319,28 +4349,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4354,36 +4384,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4391,28 +4421,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 08.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u356005988",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.8",
-							"buffer_name" : "---default_buf.8"
+							"gain" : 0.0,
+							"dictionary" : "u462011925"
 						}
 ,
 						"9" : 						{
 							"poly_id" : 9,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4420,15 +4446,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4440,28 +4466,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4475,36 +4501,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4512,28 +4538,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 09.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u443006005",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.9",
-							"buffer_name" : "---default_buf.9"
+							"gain" : 0.0,
+							"dictionary" : "u473011905"
 						}
 ,
 						"10" : 						{
 							"poly_id" : 10,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4541,15 +4563,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4561,28 +4583,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4596,36 +4618,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4633,28 +4655,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 10.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u126006021",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.10",
-							"buffer_name" : "---default_buf.10"
+							"gain" : 0.0,
+							"dictionary" : "u783011888"
 						}
 ,
 						"11" : 						{
 							"poly_id" : 11,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4662,15 +4680,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4682,28 +4700,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4717,36 +4735,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4754,28 +4772,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 11.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u580006037",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.11",
-							"buffer_name" : "---default_buf.11"
+							"gain" : 0.0,
+							"dictionary" : "u211011870"
 						}
 ,
 						"12" : 						{
 							"poly_id" : 12,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4783,15 +4797,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4803,28 +4817,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4838,36 +4852,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4875,28 +4889,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 12.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u505006053",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.12",
-							"buffer_name" : "---default_buf.12"
+							"gain" : 0.0,
+							"dictionary" : "u839011850"
 						}
 ,
 						"13" : 						{
 							"poly_id" : 13,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -4904,15 +4914,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -4924,28 +4934,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -4959,36 +4969,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -4996,28 +5006,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 13.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u295006069",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.13",
-							"buffer_name" : "---default_buf.13"
+							"gain" : 0.0,
+							"dictionary" : "u266011833"
 						}
 ,
 						"14" : 						{
 							"poly_id" : 14,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -5025,15 +5031,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -5045,28 +5051,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -5080,36 +5086,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -5117,28 +5123,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 14.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u685006085",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.14",
-							"buffer_name" : "---default_buf.14"
+							"gain" : 0.0,
+							"dictionary" : "u608011807"
 						}
 ,
 						"15" : 						{
 							"poly_id" : 15,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -5146,15 +5148,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -5166,28 +5168,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -5201,36 +5203,36 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
@@ -5238,28 +5240,24 @@
 ,
 							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 15.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u614006101",
-							"buffer_length" : 10000.0,
-							"envbuffer_name" : "---default_envbuf.15",
-							"buffer_name" : "---default_buf.15"
+							"gain" : 0.0,
+							"dictionary" : "u609011797"
 						}
 ,
 						"16" : 						{
 							"poly_id" : 16,
-							"initialised" : 1,
 							"reset_sweep" : 1,
 							"pos_rate_smooth" : 1.0,
 							"pos_smooth" : 0.0,
 							"pos_smooth_type" : 1,
-							"grain_shape" : "hanning",
+							"grain_shape" : "blackman",
 							"filter_mode" : "lowpass",
 							"parameters" : 							{
 								"volume" : 								{
-									"low" : 1.0,
+									"low" : 0.0,
 									"high" : 1.0,
 									"source" : "pressure",
 									"curve" : 2.0
@@ -5267,15 +5265,15 @@
 ,
 								"filt_f" : 								{
 									"low" : 20000.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 4.0,
 									"high" : 20000.0
 								}
 ,
 								"filt_q" : 								{
-									"low" : 0.1,
-									"high" : 0.1,
-									"source" : "mod3",
+									"low" : 1,
+									"high" : 1,
+									"source" : "-",
 									"curve" : 2.0
 								}
 ,
@@ -5287,28 +5285,28 @@
 								}
 ,
 								"loop_start" : 								{
-									"high" : 0.401574803149606,
+									"high" : 1.0,
 									"low" : 0.0,
-									"source" : "y",
+									"source" : "x",
 									"curve" : 1.0
 								}
 ,
 								"sweep_rate" : 								{
-									"high" : 1.0,
-									"source" : "x",
+									"high" : 0.0,
+									"source" : "-",
 									"curve" : 1.0,
-									"low" : 1.0
+									"low" : 0.0
 								}
 ,
 								"sweep_amount" : 								{
 									"source" : "-",
-									"high" : 1.0,
-									"low" : 1.0,
+									"high" : 0.0,
+									"low" : 0.0,
 									"curve" : 1.0
 								}
 ,
 								"fill_ratio" : 								{
-									"source" : "x",
+									"source" : "-",
 									"curve" : 3.0,
 									"high" : 1.0,
 									"low" : 1.0
@@ -5322,56 +5320,48 @@
 								}
 ,
 								"grain_rate" : 								{
-									"source" : "x",
-									"low" : 50.0,
-									"high" : 50.0,
+									"source" : "-",
+									"low" : 200.0,
+									"high" : 200.0,
 									"curve" : 3.0
 								}
 ,
 								"loop_start_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "y",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pitch_noise" : 								{
 									"low" : 0.0,
 									"high" : 0.0,
-									"source" : "x",
+									"source" : "-",
 									"curve" : 0.25
 								}
 ,
 								"pan_noise" : 								{
 									"low" : 0.0,
-									"source" : "mod4",
-									"high" : 1.0,
+									"source" : "-",
+									"high" : 0.0,
 									"curve" : 0.25
 								}
 ,
 								"grain_rate_noise" : 								{
-									"source" : "x",
-									"low" : 0.000062000124,
+									"source" : "-",
+									"low" : 0.0,
 									"high" : 0.0
 								}
 
 							}
 ,
-							"sel_end" : 5424.761904761904589,
+							"sel_end" : 10000.0,
 							"sel_start" : 0.0,
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 16.aif",
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"dictionary" : "u825006117",
-							"buffer_length" : 5424.761904761904589,
-							"envbuffer_name" : "---default_envbuf.16",
-							"buffer_name" : "---default_buf.16"
-						}
-,
-						"17" : 						{
-							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Synthesis/WackyOscillators1/Song 17.aif",
-							"dictionary" : "u031006133"
+							"gain" : 0.0,
+							"dictionary" : "u475011781"
 						}
 
 					}
@@ -5387,7 +5377,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 2,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "all_parameters[3]",
+							"parameter_longname" : "all_parameters[6]",
 							"parameter_shortname" : "all_parameters",
 							"parameter_type" : 3
 						}
@@ -6070,6 +6060,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
 					"source" : [ "obj-100", 0 ]
 				}
@@ -6262,6 +6259,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-218", 1 ],
 					"source" : [ "obj-221", 0 ]
 				}
@@ -6342,6 +6346,21 @@
 					"destination" : [ "obj-24", 0 ],
 					"order" : 0,
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"midpoints" : [ 595.5, 893.0, 851.235969543457031, 893.0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}

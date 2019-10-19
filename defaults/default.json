@@ -1,0 +1,1857 @@
+{
+	"1" : 	{
+		"poly_id" : 1,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"2" : 	{
+		"poly_id" : 2,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"3" : 	{
+		"poly_id" : 3,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"4" : 	{
+		"poly_id" : 4,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"5" : 	{
+		"poly_id" : 5,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"6" : 	{
+		"poly_id" : 6,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"7" : 	{
+		"poly_id" : 7,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"8" : 	{
+		"poly_id" : 8,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"9" : 	{
+		"poly_id" : 9,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"10" : 	{
+		"poly_id" : 10,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"11" : 	{
+		"poly_id" : 11,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"12" : 	{
+		"poly_id" : 12,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"13" : 	{
+		"poly_id" : 13,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"14" : 	{
+		"poly_id" : 14,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"15" : 	{
+		"poly_id" : 15,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+,
+	"16" : 	{
+		"poly_id" : 16,
+		"reset_sweep" : 1,
+		"pos_rate_smooth" : 1.0,
+		"pos_smooth" : 0.0,
+		"pos_smooth_type" : 1,
+		"grain_shape" : "blackman",
+		"filter_mode" : "lowpass",
+		"parameters" : 		{
+			"volume" : 			{
+				"low" : 0.0,
+				"high" : 1.0,
+				"source" : "pressure",
+				"curve" : 2.0
+			}
+,
+			"filt_f" : 			{
+				"low" : 20000.0,
+				"source" : "-",
+				"curve" : 4.0,
+				"high" : 20000.0
+			}
+,
+			"filt_q" : 			{
+				"low" : 1,
+				"high" : 1,
+				"source" : "-",
+				"curve" : 2.0
+			}
+,
+			"pan" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"high" : 0.0
+			}
+,
+			"loop_start" : 			{
+				"high" : 1.0,
+				"low" : 0.0,
+				"source" : "x",
+				"curve" : 1.0
+			}
+,
+			"sweep_rate" : 			{
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 1.0,
+				"low" : 0.0
+			}
+,
+			"sweep_amount" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"fill_ratio" : 			{
+				"source" : "-",
+				"curve" : 3.0,
+				"high" : 1.0,
+				"low" : 1.0
+			}
+,
+			"pitch" : 			{
+				"source" : "-",
+				"high" : 0.0,
+				"low" : 0.0,
+				"curve" : 1.0
+			}
+,
+			"grain_rate" : 			{
+				"source" : "-",
+				"low" : 200.0,
+				"high" : 200.0,
+				"curve" : 3.0
+			}
+,
+			"loop_start_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pitch_noise" : 			{
+				"low" : 0.0,
+				"high" : 0.0,
+				"source" : "-",
+				"curve" : 0.25
+			}
+,
+			"pan_noise" : 			{
+				"low" : 0.0,
+				"source" : "-",
+				"high" : 0.0,
+				"curve" : 0.25
+			}
+,
+			"grain_rate_noise" : 			{
+				"source" : "-",
+				"low" : 0.0,
+				"high" : 0.0
+			}
+
+		}
+,
+		"sel_end" : 10000.0,
+		"sel_start" : 0.0,
+		"rev_on_rev" : 0,
+		"env_a" : 0.0,
+		"env_r" : 0.0,
+		"gain" : 0.0
+	}
+}
