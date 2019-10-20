@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -111.0, -1001.0, 1492.0, 967.0 ],
+		"rect" : [ -111.0, -1001.0, 892.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -2520,13 +2520,13 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-214",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -1.0, 367.5, 163.0, 53.0 ],
-									"text" : "\"Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/GranulationSets/Electromechanical/08 - SpacedServo.wav\""
+									"text" : "\"Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Grabs/ChoralSnippets/Schnittke/Schnittke4.wav\""
 								}
 
 							}
@@ -3253,7 +3253,7 @@
 										"valueof" : 										{
 											"parameter_invisible" : 2,
 											"parameter_linknames" : 1,
-											"parameter_longname" : "all_parameters[5]",
+											"parameter_longname" : "all_parameters[1]",
 											"parameter_shortname" : "all_parameters",
 											"parameter_type" : 3
 										}
@@ -3516,8 +3516,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -3566,8 +3566,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -3600,13 +3600,18 @@
 
 							}
 ,
-							"sel_end" : 10000.0,
+							"sel_end" : 3426.009070294784578,
 							"sel_start" : 0.0,
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u635018788"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u399013994",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Grabs/ChoralSnippets/Schnittke/Schnittke1.wav",
+							"buffer_length" : 3426.009070294784578,
+							"envbuffer_name" : "---default_envbuf.1",
+							"buffer_name" : "---default_buf.1"
 						}
 ,
 						"2" : 						{
@@ -3633,8 +3638,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -3683,8 +3688,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -3722,8 +3727,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u109018804"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u947014178",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Grabs/ChoralSnippets/Schnittke/Schnittke2.wav",
+							"envbuffer_name" : "---default_envbuf.2",
+							"buffer_name" : "---default_buf.2"
 						}
 ,
 						"3" : 						{
@@ -3750,8 +3759,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -3800,8 +3809,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -3839,8 +3848,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u783012017"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u240005224",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Grabs/ChoralSnippets/Schnittke/Schnittke3.wav",
+							"envbuffer_name" : "---default_envbuf.3",
+							"buffer_name" : "---default_buf.3"
 						}
 ,
 						"4" : 						{
@@ -3867,8 +3880,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -3917,8 +3930,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -3956,8 +3969,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u400012000"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u080005204",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/Grabs/ChoralSnippets/Schnittke/Schnittke4.wav",
+							"envbuffer_name" : "---default_envbuf.4",
+							"buffer_name" : "---default_buf.4"
 						}
 ,
 						"5" : 						{
@@ -3984,8 +4001,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4034,8 +4051,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4073,8 +4090,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u007011982"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u043005184",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/GranulationSets/Electromechanical/05 - ServoPiezo1.wav",
+							"envbuffer_name" : "---default_envbuf.5",
+							"buffer_name" : "---default_buf.5"
 						}
 ,
 						"6" : 						{
@@ -4101,8 +4122,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4151,8 +4172,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4190,8 +4211,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u095011963"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u713005152",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/GranulationSets/Electromechanical/05 - ServowithPiezo.aif",
+							"envbuffer_name" : "---default_envbuf.6",
+							"buffer_name" : "---default_buf.6"
 						}
 ,
 						"7" : 						{
@@ -4218,8 +4243,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4268,8 +4293,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4307,8 +4332,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u240011943"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u622005144",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/GranulationSets/Electromechanical/06 - VoiceCoilServo1.wav",
+							"envbuffer_name" : "---default_envbuf.7",
+							"buffer_name" : "---default_buf.7"
 						}
 ,
 						"8" : 						{
@@ -4335,8 +4364,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4385,8 +4414,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4424,8 +4453,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u462011925"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u975005122",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/GranulationSets/Electromechanical/07 - VoiceCoilServo2.wav",
+							"envbuffer_name" : "---default_envbuf.8",
+							"buffer_name" : "---default_buf.8"
 						}
 ,
 						"9" : 						{
@@ -4452,8 +4485,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4502,8 +4535,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4541,8 +4574,12 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u473011905"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u515005103",
+							"initialised" : 1,
+							"buffer_file" : "Macintosh HD:/Users/dmrust/PersonalProjects/Sounds/GranulationSets/Electromechanical/08 - SpacedServo.wav",
+							"envbuffer_name" : "---default_envbuf.9",
+							"buffer_name" : "---default_buf.9"
 						}
 ,
 						"10" : 						{
@@ -4569,8 +4606,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4619,8 +4656,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4658,8 +4695,11 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u783011888"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u093005082",
+							"initialised" : 1,
+							"envbuffer_name" : "---default_envbuf.10",
+							"buffer_name" : "---default_buf.10"
 						}
 ,
 						"11" : 						{
@@ -4686,8 +4726,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4736,8 +4776,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4775,8 +4815,11 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u211011870"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u556005060",
+							"initialised" : 1,
+							"envbuffer_name" : "---default_envbuf.11",
+							"buffer_name" : "---default_buf.11"
 						}
 ,
 						"12" : 						{
@@ -4803,8 +4846,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4853,8 +4896,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -4892,8 +4935,11 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u839011850"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u651005040",
+							"initialised" : 1,
+							"envbuffer_name" : "---default_envbuf.12",
+							"buffer_name" : "---default_buf.12"
 						}
 ,
 						"13" : 						{
@@ -4920,8 +4966,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -4970,8 +5016,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -5009,8 +5055,11 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u266011833"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u925005020",
+							"initialised" : 1,
+							"envbuffer_name" : "---default_envbuf.13",
+							"buffer_name" : "---default_buf.13"
 						}
 ,
 						"14" : 						{
@@ -5037,8 +5086,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -5087,8 +5136,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -5126,8 +5175,11 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u608011807"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u897014541",
+							"initialised" : 1,
+							"envbuffer_name" : "---default_envbuf.14",
+							"buffer_name" : "---default_buf.14"
 						}
 ,
 						"15" : 						{
@@ -5154,8 +5206,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -5204,8 +5256,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -5243,8 +5295,11 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u609011797"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u558014557",
+							"initialised" : 1,
+							"envbuffer_name" : "---default_envbuf.15",
+							"buffer_name" : "---default_buf.15"
 						}
 ,
 						"16" : 						{
@@ -5271,8 +5326,8 @@
 								}
 ,
 								"filt_q" : 								{
-									"low" : 1,
-									"high" : 1,
+									"low" : 1.0,
+									"high" : 1.0,
 									"source" : "-",
 									"curve" : 2.0
 								}
@@ -5321,8 +5376,8 @@
 ,
 								"grain_rate" : 								{
 									"source" : "-",
-									"low" : 200.0,
-									"high" : 200.0,
+									"low" : 199.999989106972123,
+									"high" : 199.999989106972123,
 									"curve" : 3.0
 								}
 ,
@@ -5360,8 +5415,49 @@
 							"rev_on_rev" : 0,
 							"env_a" : 0.0,
 							"env_r" : 0.0,
-							"gain" : 0.0,
-							"dictionary" : "u475011781"
+							"gain" : -0.000000496820519,
+							"dictionary" : "u687014573",
+							"initialised" : 1,
+							"envbuffer_name" : "---default_envbuf.16",
+							"buffer_name" : "---default_buf.16"
+						}
+,
+						"dictionary" : 						{
+							"u666011781" : 4739.886621315192315,
+							"u162011965" : 4739.886621315192315,
+							"dictionary" : "u753014589"
+						}
+,
+						"parameters" : 						{
+							"sweep_rate" : 							{
+								"low" : 								{
+									"1." : "u399013994"
+								}
+,
+								"high" : 								{
+									"1." : "u399013994"
+								}
+,
+								"source" : 								{
+									"x" : "u399013994"
+								}
+
+							}
+,
+							"loop_start" : 							{
+								"high" : 								{
+									"0." : "u399013994"
+								}
+
+							}
+,
+							"volume" : 							{
+								"low" : 								{
+									"1." : "u399013994"
+								}
+
+							}
+
 						}
 
 					}
@@ -5377,7 +5473,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 2,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "all_parameters[6]",
+							"parameter_longname" : "all_parameters[3]",
 							"parameter_shortname" : "all_parameters",
 							"parameter_type" : 3
 						}
